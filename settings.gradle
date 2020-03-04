@@ -1,0 +1,2 @@
+rootProject.name='EcomerceAppKotlin'
+include ':app'
