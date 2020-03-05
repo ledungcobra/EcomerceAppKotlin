@@ -1,5 +1,6 @@
 package com.example.ecomerceappkotlin
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnGetData.setOnClickListener {
+
+            startActivity(Intent(this@MainActivity,DownloadingImage::class.java))
 
             val serverURL = "http://192.168.1.8/PhpTest/newEmptyPHP.php";
             val requestQ: RequestQueue = Volley.newRequestQueue(this@MainActivity);
